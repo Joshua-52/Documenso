@@ -6,6 +6,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Eye, EyeOff } from 'lucide-react';
 import { signIn } from 'next-auth/react';
 import { Controller, useForm } from 'react-hook-form';
+import { FcGoogle } from 'react-icons/fc';
+import { GrApple } from 'react-icons/gr';
 import { z } from 'zod';
 
 import { useAnalytics } from '@documenso/lib/client-only/hooks/use-analytics';
@@ -39,6 +41,7 @@ export const SignUpForm = ({ className }: SignUpFormProps) => {
   const { toast } = useToast();
   const analytics = useAnalytics();
   const [showPassword, setShowPassword] = useState(false);
+  const SIGNUP_REDIRECT_PATH = '/documents';
 
   const {
     control,
@@ -86,6 +89,31 @@ export const SignUpForm = ({ className }: SignUpFormProps) => {
           variant: 'destructive',
         });
       }
+    }
+  };
+  const onSignUpWithGoogleClick = async () => {
+    try {
+      await signIn('google', { callbackUrl: SIGNUP_REDIRECT_PATH });
+    } catch (err) {
+      toast({
+        title: 'An unknown error occurred',
+        description:
+          'We encountered an unknown error while attempting to sign you In. Please try again later.',
+        variant: 'destructive',
+      });
+    }
+  };
+
+  const onSignUpWithAppleClick = async () => {
+    try {
+      await signIn('apple', { callbackUrl: SIGNUP_REDIRECT_PATH });
+    } catch (err) {
+      toast({
+        title: 'An unknown error occurred',
+        description:
+          'We encountered an unknown error while attempting to sign you In. Please try again later.',
+        variant: 'destructive',
+      });
     }
   };
 
@@ -177,6 +205,36 @@ export const SignUpForm = ({ className }: SignUpFormProps) => {
       >
         {isSubmitting ? 'Signing up...' : 'Sign Up'}
       </Button>
+      <div className="relative flex items-center justify-center gap-x-4 py-2 text-xs uppercase">
+        <div className="bg-border h-px flex-1" />
+        <span className="text-muted-foreground bg-transparent">Or continue with</span>
+        <div className="bg-border h-px flex-1" />
+      </div>
+      <div className="grid grid-cols-2 gap-2">
+        <Button
+          type="button"
+          size="lg"
+          variant={'outline'}
+          className="bg-background text-muted-foreground border"
+          disabled={isSubmitting}
+          onClick={onSignUpWithGoogleClick}
+        >
+          <FcGoogle className="mr-2 h-5 w-5" />
+          Google
+        </Button>
+
+        <Button
+          type="button"
+          size="lg"
+          variant={'outline'}
+          className="bg-background text-muted-foreground border"
+          disabled={isSubmitting}
+          onClick={onSignUpWithAppleClick}
+        >
+          <GrApple className="mr-2 h-5 w-5" />
+          Apple
+        </Button>
+      </div>
     </form>
   );
 };
