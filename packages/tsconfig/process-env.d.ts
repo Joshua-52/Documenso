@@ -74,6 +74,7 @@ declare namespace NodeJS {
     VERCEL?: string;
     VERCEL_ENV?: 'production' | 'development' | 'preview';
     VERCEL_URL?: string;
+    NEXT_RUNTIME?: 'nodejs' | 'edge';
 
     DEPLOYMENT_TARGET?: 'webapp' | 'marketing';
     FONT_CAVEAT_URI: string;
@@ -83,5 +84,7 @@ declare namespace NodeJS {
     DATABASE_URL?: string;
     POSTGRES_PRISMA_URL?: string;
     POSTGRES_URL_NON_POOLING?: string;
+
+    DISABLE_TELEMETRY?: string;
   }
 }
