@@ -1,3 +1,4 @@
+import { revalidatePath } from 'next/cache';
 import Link from 'next/link';
 
 import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
@@ -87,9 +88,14 @@ export const DocumentsPageView = async ({ searchParams = {}, team }: DocumentsPa
     return `${formatDocumentsPath(team?.url)}?${params.toString()}`;
   };
 
+  const refetchOnUploadSuccess = async () => {
+    'use server';
+    await revalidatePath(`${formatDocumentsPath(team?.url)}`);
+  };
+
   return (
     <div className="mx-auto w-full max-w-screen-xl px-4 md:px-8">
-      <UploadDocument team={currentTeam} />
+      <UploadDocument team={currentTeam} refetchDocumentResults={refetchOnUploadSuccess} />
 
       <div className="mt-12 flex flex-wrap items-center justify-between gap-x-4 gap-y-8">
         <div className="flex flex-row items-center">
