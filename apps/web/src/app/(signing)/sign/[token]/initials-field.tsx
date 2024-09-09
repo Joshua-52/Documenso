@@ -1,11 +1,12 @@
 'use client';
 
-import { useTransition } from 'react';
+import { useEffect, useTransition } from 'react';
 
 import { useRouter } from 'next/navigation';
 
 import { Loader } from 'lucide-react';
 
+import { useDebouncedValue } from '@documenso/lib/client-only/hooks/use-debounced-value';
 import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@documenso/lib/constants/trpc';
 import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
 import type { TRecipientActionAuth } from '@documenso/lib/types/document-auth';
@@ -19,6 +20,7 @@ import type {
 } from '@documenso/trpc/server/field-router/schema';
 import { useToast } from '@documenso/ui/primitives/use-toast';
 
+import { useRequiredDocumentAuthContext } from './document-auth-provider';
 import { useRequiredSigningContext } from './provider';
 import { SigningFieldContainer } from './signing-field-container';
 
@@ -41,7 +43,11 @@ export const InitialsField = ({
   const { fullName } = useRequiredSigningContext();
   const initials = extractInitials(fullName);
 
+  const debouncedInitials = useDebouncedValue(initials, 2000);
+
   const [isPending, startTransition] = useTransition();
+
+  const { executeActionAuthProcedure } = useRequiredDocumentAuthContext();
 
   const { mutateAsync: signFieldWithToken, isLoading: isSignFieldWithTokenLoading } =
     trpc.field.signFieldWithToken.useMutation(DO_NOT_INVALIDATE_QUERY_ON_MUTATION);
@@ -55,7 +61,7 @@ export const InitialsField = ({
 
   const onSign = async (authOptions?: TRecipientActionAuth) => {
     try {
-      const value = initials ?? '';
+      const value = debouncedInitials ?? '';
 
       const payload: TSignFieldWithTokenMutationSchema = {
         token: recipient.token,
@@ -115,6 +121,15 @@ export const InitialsField = ({
       });
     }
   };
+
+  useEffect(() => {
+    if (!field.inserted && debouncedInitials) {
+      void executeActionAuthProcedure({
+        onReauthFormSubmit: async (authOptions) => await onSign(authOptions),
+        actionTarget: field.type,
+      });
+    }
+  }, [field, debouncedInitials, field.inserted]);
 
   return (
     <SigningFieldContainer field={field} onSign={onSign} onRemove={onRemove} type="Initials">

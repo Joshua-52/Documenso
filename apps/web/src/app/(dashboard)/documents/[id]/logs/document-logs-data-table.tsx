@@ -106,9 +106,7 @@ export const DocumentLogsDataTable = ({ documentId }: DocumentLogsDataTableProps
         header: _(msg`Action`),
         accessorKey: 'type',
         cell: ({ row }) => (
-          <span>
-            {uppercaseFistLetter(formatDocumentAuditLogAction(row.original).description)}
-          </span>
+          <span>{uppercaseFistLetter(formatDocumentAuditLogAction(row.original).description)}</span>
         ),
       },
       {

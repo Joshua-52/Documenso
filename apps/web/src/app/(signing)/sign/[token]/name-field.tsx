@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 
 import { useRouter } from 'next/navigation';
 
@@ -8,6 +8,7 @@ import { Trans, msg } from '@lingui/macro';
 import { useLingui } from '@lingui/react';
 import { Loader } from 'lucide-react';
 
+import { useDebouncedValue } from '@documenso/lib/client-only/hooks/use-debounced-value';
 import { DO_NOT_INVALIDATE_QUERY_ON_MUTATION } from '@documenso/lib/constants/trpc';
 import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
 import type { TRecipientActionAuth } from '@documenso/lib/types/document-auth';
@@ -43,6 +44,8 @@ export const NameField = ({ field, recipient, onSignField, onUnsignField }: Name
 
   const { fullName: providedFullName, setFullName: setProvidedFullName } =
     useRequiredSigningContext();
+
+  const debouncedProvidedFullName = useDebouncedValue(providedFullName, 2000);
 
   const { executeActionAuthProcedure } = useRequiredDocumentAuthContext();
 
@@ -150,6 +153,15 @@ export const NameField = ({ field, recipient, onSignField, onUnsignField }: Name
       });
     }
   };
+
+  useEffect(() => {
+    if (!field.inserted && providedFullName) {
+      void executeActionAuthProcedure({
+        onReauthFormSubmit: async (authOptions) => await onSign(authOptions),
+        actionTarget: field.type,
+      });
+    }
+  }, [field, debouncedProvidedFullName]);
 
   return (
     <SigningFieldContainer

@@ -88,8 +88,7 @@ export const DocumentsDataTable = ({
       {
         header: _(msg`Actions`),
         cell: ({ row }) =>
-          (!row.original.deletedAt ||
-            row.original.status === ExtendedDocumentStatus.COMPLETED) && (
+          (!row.original.deletedAt || row.original.status === ExtendedDocumentStatus.COMPLETED) && (
             <div className="flex items-center gap-x-4">
               <DataTableActionButton team={team} row={row.original} />
               <DataTableActionDropdown team={team} row={row.original} />

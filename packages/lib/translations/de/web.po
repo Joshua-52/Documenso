@@ -420,10 +420,8 @@ msgid "An error occurred while moving the template."
 msgstr "Ein Fehler ist aufgetreten, während die Vorlage verschoben wurde."
 
 #: apps/web/src/app/(signing)/sign/[token]/checkbox-field.tsx:152
-#: apps/web/src/app/(signing)/sign/[token]/date-field.tsx:126
 #: apps/web/src/app/(signing)/sign/[token]/dropdown-field.tsx:137
-#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:110
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:148
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:151
 #: apps/web/src/app/(signing)/sign/[token]/number-field.tsx:195
 #: apps/web/src/app/(signing)/sign/[token]/radio-field.tsx:129
 #: apps/web/src/app/(signing)/sign/[token]/signature-field.tsx:175
@@ -445,8 +443,8 @@ msgstr "Beim Senden Ihrer Bestätigungs-E-Mail ist ein Fehler aufgetreten"
 #: apps/web/src/app/(signing)/sign/[token]/checkbox-field.tsx:123
 #: apps/web/src/app/(signing)/sign/[token]/date-field.tsx:100
 #: apps/web/src/app/(signing)/sign/[token]/dropdown-field.tsx:106
-#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:84
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:122
+#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:81
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:125
 #: apps/web/src/app/(signing)/sign/[token]/number-field.tsx:150
 #: apps/web/src/app/(signing)/sign/[token]/radio-field.tsx:102
 #: apps/web/src/app/(signing)/sign/[token]/signature-field.tsx:149
@@ -593,7 +591,7 @@ msgstr "Avatar aktualisiert"
 msgid "Awaiting email confirmation"
 msgstr "Warte auf E-Mail-Bestätigung"
 
-#: apps/web/src/app/(recipient)/d/[token]/sign-direct-template.tsx:369
+#: apps/web/src/app/(recipient)/d/[token]/sign-direct-template.tsx:365
 #: apps/web/src/components/(dashboard)/settings/layout/activity-back.tsx:20
 #: apps/web/src/components/forms/v2/signup.tsx:497
 msgid "Back"
@@ -665,7 +663,7 @@ msgstr "Durch die Aktivierung von 2FA müssen Sie jedes Mal, wenn Sie sich anmel
 #: apps/web/src/app/(signing)/sign/[token]/document-action-auth-passkey.tsx:164
 #: apps/web/src/app/(signing)/sign/[token]/document-action-auth-passkey.tsx:189
 #: apps/web/src/app/(signing)/sign/[token]/form.tsx:143
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:215
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:227
 #: apps/web/src/app/(signing)/sign/[token]/number-field.tsx:327
 #: apps/web/src/app/(signing)/sign/[token]/sign-dialog.tsx:110
 #: apps/web/src/app/(signing)/sign/[token]/signature-field.tsx:250
@@ -1005,7 +1003,7 @@ msgid "Dark Mode"
 msgstr "Dunkelmodus"
 
 #: apps/web/src/app/(dashboard)/settings/security/activity/user-security-activity-data-table.tsx:72
-#: apps/web/src/app/(signing)/sign/[token]/date-field.tsx:148
+#: apps/web/src/app/(signing)/sign/[token]/date-field.tsx:129
 msgid "Date"
 msgstr "Datum"
 
@@ -1396,7 +1394,7 @@ msgstr "Webhook bearbeiten"
 #: apps/web/src/app/(dashboard)/templates/use-template-dialog.tsx:213
 #: apps/web/src/app/(dashboard)/templates/use-template-dialog.tsx:220
 #: apps/web/src/app/(recipient)/d/[token]/configure-direct-template.tsx:118
-#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:126
+#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:106
 #: apps/web/src/app/embed/direct/[[...url]]/client.tsx:376
 #: apps/web/src/app/embed/sign/[[...url]]/client.tsx:254
 #: apps/web/src/components/(teams)/dialogs/add-team-email-dialog.tsx:169
@@ -1499,13 +1497,11 @@ msgstr "Geben Sie hier Ihren Text ein"
 #: apps/web/src/app/(signing)/sign/[token]/checkbox-field.tsx:151
 #: apps/web/src/app/(signing)/sign/[token]/checkbox-field.tsx:212
 #: apps/web/src/app/(signing)/sign/[token]/date-field.tsx:99
-#: apps/web/src/app/(signing)/sign/[token]/date-field.tsx:125
 #: apps/web/src/app/(signing)/sign/[token]/dropdown-field.tsx:105
 #: apps/web/src/app/(signing)/sign/[token]/dropdown-field.tsx:136
-#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:83
-#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:109
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:121
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:147
+#: apps/web/src/app/(signing)/sign/[token]/email-field.tsx:80
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:124
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:150
 #: apps/web/src/app/(signing)/sign/[token]/number-field.tsx:149
 #: apps/web/src/app/(signing)/sign/[token]/number-field.tsx:194
 #: apps/web/src/app/(signing)/sign/[token]/radio-field.tsx:101
@@ -1571,8 +1567,8 @@ msgstr "Die Datei darf nicht größer als {APP_DOCUMENT_UPLOAD_SIZE_LIMIT} MB se
 msgid "Forgot your password?"
 msgstr "Haben Sie Ihr Passwort vergessen?"
 
-#: apps/web/src/app/(recipient)/d/[token]/sign-direct-template.tsx:326
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:193
+#: apps/web/src/app/(recipient)/d/[token]/sign-direct-template.tsx:322
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:205
 #: apps/web/src/app/embed/direct/[[...url]]/client.tsx:361
 #: apps/web/src/app/embed/sign/[[...url]]/client.tsx:239
 #: apps/web/src/components/forms/profile.tsx:110
@@ -1984,7 +1980,7 @@ msgstr "Meine Vorlagen"
 #: apps/web/src/app/(dashboard)/templates/use-template-dialog.tsx:235
 #: apps/web/src/app/(dashboard)/templates/use-template-dialog.tsx:242
 #: apps/web/src/app/(signing)/sign/[token]/complete/claim-account.tsx:119
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:170
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:182
 #: apps/web/src/components/(teams)/dialogs/add-team-email-dialog.tsx:153
 #: apps/web/src/components/(teams)/dialogs/update-team-email-dialog.tsx:141
 #: apps/web/src/components/forms/signup.tsx:164
@@ -2379,7 +2375,7 @@ msgstr "Öffentlicher Profil-Benutzername"
 msgid "Public templates are connected to your public profile. Any modifications to public templates will also appear in your public profile."
 msgstr "Öffentliche Vorlagen sind mit Ihrem öffentlichen Profil verbunden. Änderungen an öffentlichen Vorlagen erscheinen auch in Ihrem öffentlichen Profil."
 
-#: apps/web/src/app/(signing)/sign/[token]/signing-field-container.tsx:144
+#: apps/web/src/app/(signing)/sign/[token]/signing-field-container.tsx:146
 msgid "Read only field"
 msgstr "Nur-Lese-Feld"
 
@@ -2438,8 +2434,7 @@ msgstr "Haben Sie Ihr Passwort vergessen? <0>Einloggen</0>"
 
 #: apps/web/src/app/(dashboard)/settings/public-profile/public-templates-data-table.tsx:193
 #: apps/web/src/app/(dashboard)/templates/template-direct-link-dialog.tsx:431
-#: apps/web/src/app/(signing)/sign/[token]/signing-field-container.tsx:156
-#: apps/web/src/app/(signing)/sign/[token]/signing-field-container.tsx:180
+#: apps/web/src/app/(signing)/sign/[token]/signing-field-container.tsx:158
 #: apps/web/src/app/(teams)/t/[teamUrl]/settings/team-email-dropdown.tsx:89
 #: apps/web/src/components/(teams)/dialogs/remove-team-email-dialog.tsx:159
 #: apps/web/src/components/(teams)/tables/pending-user-teams-data-table-actions.tsx:54
@@ -2695,7 +2690,7 @@ msgstr "Vorlagen in Ihrem Team-Öffentliches Profil anzeigen, damit Ihre Zielgru
 #: apps/web/src/app/(dashboard)/documents/data-table-action-dropdown.tsx:137
 #: apps/web/src/app/(profile)/p/[url]/page.tsx:192
 #: apps/web/src/app/(signing)/sign/[token]/document-action-auth-2fa.tsx:182
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:224
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:236
 #: apps/web/src/app/(signing)/sign/[token]/sign-dialog.tsx:121
 #: apps/web/src/app/(signing)/sign/[token]/signature-field.tsx:259
 #: apps/web/src/components/ui/user-profile-skeleton.tsx:75
@@ -2711,7 +2706,7 @@ msgstr "Unterzeichnen als {0} <0>({1})</0>"
 #~ msgid "Sign as <0>{0} <1>({1})</1></0>"
 #~ msgstr "Sign as <0>{0} <1>({1})</1></0>"
 
-#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:183
+#: apps/web/src/app/(signing)/sign/[token]/name-field.tsx:195
 msgid "Sign as<0>{0} <1>({1})</1></0>"
 msgstr "Unterzeichnen als<0>{0} <1>({1})</1></0>"
 
@@ -2768,7 +2763,7 @@ msgid "Sign Up with OIDC"
 msgstr "Registrieren mit OIDC"
 
 #: apps/web/src/app/(dashboard)/admin/documents/[id]/recipient-item.tsx:88
-#: apps/web/src/app/(recipient)/d/[token]/sign-direct-template.tsx:338
+#: apps/web/src/app/(recipient)/d/[token]/sign-direct-template.tsx:334
 #: apps/web/src/app/(signing)/sign/[token]/signature-field.tsx:197
 #: apps/web/src/app/(signing)/sign/[token]/signature-field.tsx:227
 #: apps/web/src/app/embed/direct/[[...url]]/client.tsx:391

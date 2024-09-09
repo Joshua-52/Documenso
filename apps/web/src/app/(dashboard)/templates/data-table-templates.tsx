@@ -81,8 +81,8 @@ export const TemplatesDataTable = ({
 
                     <p>
                       <Trans>
-                        Public templates are connected to your public profile. Any modifications
-                        to public templates will also appear in your public profile.
+                        Public templates are connected to your public profile. Any modifications to
+                        public templates will also appear in your public profile.
                       </Trans>
                     </p>
                   </li>
@@ -94,9 +94,9 @@ export const TemplatesDataTable = ({
 
                     <p>
                       <Trans>
-                        Direct link templates contain one dynamic recipient placeholder. Anyone
-                        with access to this link can sign the document, and it will then appear
-                        on your documents page.
+                        Direct link templates contain one dynamic recipient placeholder. Anyone with
+                        access to this link can sign the document, and it will then appear on your
+                        documents page.
                       </Trans>
                     </p>
                   </li>
@@ -109,8 +109,8 @@ export const TemplatesDataTable = ({
                     <p>
                       {teamId ? (
                         <Trans>
-                          Team only templates are not linked anywhere and are visible only to
-                          your team.
+                          Team only templates are not linked anywhere and are visible only to your
+                          team.
                         </Trans>
                       ) : (
                         <Trans>Private templates can only be modified and viewed by you.</Trans>

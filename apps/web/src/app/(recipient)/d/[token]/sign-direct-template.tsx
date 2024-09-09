@@ -193,7 +193,6 @@ export const SignDirectTemplateForm = ({
                   field={field}
                   recipient={directRecipient}
                   onSignField={onSignField}
-                  onUnsignField={onUnsignField}
                 />
               ))
               .with(FieldType.NAME, () => (
@@ -202,7 +201,6 @@ export const SignDirectTemplateForm = ({
                   field={field}
                   recipient={directRecipient}
                   onSignField={onSignField}
-                  onUnsignField={onUnsignField}
                 />
               ))
               .with(FieldType.DATE, () => (
@@ -213,7 +211,6 @@ export const SignDirectTemplateForm = ({
                   dateFormat={template.templateMeta?.dateFormat ?? DEFAULT_DOCUMENT_DATE_FORMAT}
                   timezone={template.templateMeta?.timezone ?? DEFAULT_DOCUMENT_TIME_ZONE}
                   onSignField={onSignField}
-                  onUnsignField={onUnsignField}
                 />
               ))
               .with(FieldType.EMAIL, () => (
@@ -222,7 +219,6 @@ export const SignDirectTemplateForm = ({
                   field={field}
                   recipient={directRecipient}
                   onSignField={onSignField}
-                  onUnsignField={onUnsignField}
                 />
               ))
               .with(FieldType.TEXT, () => {
