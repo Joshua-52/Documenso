@@ -1,12 +1,12 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2024-07-24 13:01+1000\n"
+"POT-Creation-Date: 2024-08-22 05:16+0000\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: de\n"
-"Project-Id-Version: documenso-app\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2024-09-05 06:04\n"
 "Last-Translator: \n"
@@ -82,19 +82,19 @@ msgstr "Weitere Option hinzufügen"
 msgid "Add another value"
 msgstr "Weiteren Wert hinzufügen"
 
-#: packages/ui/primitives/document-flow/add-signers.tsx:359
+#: packages/ui/primitives/document-flow/add-signers.tsx:459
 msgid "Add myself"
 msgstr "Mich selbst hinzufügen"
 
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:369
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:450
 msgid "Add Myself"
 msgstr "Mich hinzufügen"
 
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:355
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:436
 msgid "Add Placeholder Recipient"
 msgstr "Platzhalterempfänger hinzufügen"
 
-#: packages/ui/primitives/document-flow/add-signers.tsx:348
+#: packages/ui/primitives/document-flow/add-signers.tsx:448
 msgid "Add Signer"
 msgstr "Unterzeichner hinzufügen"
 
@@ -154,8 +154,8 @@ msgid "Cancel"
 msgstr "Abbrechen"
 
 #: packages/ui/primitives/document-flow/add-signers.tsx:164
-msgid "Cannot remove signer"
-msgstr "Unterzeichner kann nicht entfernt werden"
+#~ msgid "Cannot remove signer"
+#~ msgstr "Unterzeichner kann nicht entfernt werden"
 
 #: packages/lib/constants/recipient-roles.ts:17
 msgid "Cc"
@@ -230,7 +230,7 @@ msgstr "Datum"
 msgid "Date Format"
 msgstr "Datumsformat"
 
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:312
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:393
 msgid "Direct link receiver"
 msgstr "Empfänger des direkten Links"
 
@@ -263,11 +263,11 @@ msgstr "Dropdown-Optionen"
 
 #: packages/ui/primitives/document-flow/add-fields.tsx:776
 #: packages/ui/primitives/document-flow/add-signature.tsx:272
-#: packages/ui/primitives/document-flow/add-signers.tsx:232
-#: packages/ui/primitives/document-flow/add-signers.tsx:239
+#: packages/ui/primitives/document-flow/add-signers.tsx:330
+#: packages/ui/primitives/document-flow/add-signers.tsx:337
 #: packages/ui/primitives/template-flow/add-template-fields.tsx:632
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:210
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:217
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:296
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:303
 msgid "Email"
 msgstr "E-Mail"
 
@@ -378,10 +378,10 @@ msgstr "Min"
 
 #: packages/ui/primitives/document-flow/add-fields.tsx:802
 #: packages/ui/primitives/document-flow/add-signature.tsx:298
-#: packages/ui/primitives/document-flow/add-signers.tsx:265
+#: packages/ui/primitives/document-flow/add-signers.tsx:364
 #: packages/ui/primitives/template-flow/add-template-fields.tsx:658
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:245
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:251
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:327
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:333
 msgid "Name"
 msgstr "Name"
 
@@ -560,8 +560,8 @@ msgstr "Unterschriftenkarte teilen"
 msgid "Share the Link"
 msgstr "Link teilen"
 
-#: packages/ui/primitives/document-flow/add-signers.tsx:377
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:387
+#: packages/ui/primitives/document-flow/add-signers.tsx:477
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:468
 msgid "Show advanced settings"
 msgstr "Erweiterte Einstellungen anzeigen"
 
@@ -686,13 +686,13 @@ msgstr "Dieses Dokument wurde bereits an diesen Empfänger gesendet. Sie können
 msgid "This document is password protected. Please enter the password to view the document."
 msgstr "Dieses Dokument ist durch ein Passwort geschützt. Bitte geben Sie das Passwort ein, um das Dokument anzusehen."
 
-#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:315
+#: packages/ui/primitives/template-flow/add-template-placeholder-recipients.tsx:396
 msgid "This field cannot be modified or deleted. When you share this template's direct link or add it to your public profile, anyone who accesses it can input their name and email, and fill in the fields assigned to them."
 msgstr "Dieses Feld kann nicht geändert oder gelöscht werden. Wenn Sie den direkten Link dieser Vorlage teilen oder zu Ihrem öffentlichen Profil hinzufügen, kann jeder, der darauf zugreift, seinen Namen und seine E-Mail-Adresse eingeben und die ihm zugewiesenen Felder ausfüllen."
 
 #: packages/ui/primitives/document-flow/add-signers.tsx:165
-msgid "This signer has already received the document."
-msgstr "Dieser Unterzeichner hat das Dokument bereits erhalten."
+#~ msgid "This signer has already received the document."
+#~ msgstr "Dieser Unterzeichner hat das Dokument bereits erhalten."
 
 #: packages/ui/components/recipient/recipient-action-auth-select.tsx:48
 msgid "This will override any global settings."

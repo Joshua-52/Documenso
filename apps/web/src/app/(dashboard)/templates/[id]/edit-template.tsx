@@ -266,6 +266,7 @@ export const EditTemplateForm = ({
               onSubmit={onAddTemplatePlaceholderFormSubmit}
               isEnterprise={isEnterprise}
               isDocumentPdfLoaded={isDocumentPdfLoaded}
+              template={template}
             />
 
             <AddTemplateFieldsFormPartial
