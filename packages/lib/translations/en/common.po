@@ -362,7 +362,7 @@ msgstr "Max"
 msgid "Member"
 msgstr "Member"
 
-#: packages/ui/primitives/document-flow/add-subject.tsx:95
+#: packages/ui/primitives/document-flow/add-subject.tsx:229
 #: packages/ui/primitives/template-flow/add-template-settings.tsx:215
 msgid "Message <0>(Optional)</0>"
 msgstr "Message <0>(Optional)</0>"
@@ -537,7 +537,7 @@ msgstr "Select at least"
 msgid "Select default option"
 msgstr "Select default option"
 
-#: packages/ui/primitives/document-flow/add-subject.tsx:124
+#: packages/ui/primitives/document-flow/add-subject.tsx:275
 #: packages/ui/primitives/document-flow/send-document-action-dialog.tsx:34
 #: packages/ui/primitives/document-flow/send-document-action-dialog.tsx:64
 msgid "Send"
@@ -599,7 +599,7 @@ msgstr "Something went wrong."
 msgid "Step <0>{step} of {maxStep}</0>"
 msgstr "Step <0>{step} of {maxStep}</0>"
 
-#: packages/ui/primitives/document-flow/add-subject.tsx:78
+#: packages/ui/primitives/document-flow/add-subject.tsx:194
 #: packages/ui/primitives/template-flow/add-template-settings.tsx:195
 msgid "Subject <0>(Optional)</0>"
 msgstr "Subject <0>(Optional)</0>"
@@ -707,7 +707,7 @@ msgstr "Title"
 msgid "To proceed further, please set at least one value for the {0} field."
 msgstr "To proceed further, please set at least one value for the {0} field."
 
-#: packages/ui/primitives/document-flow/add-subject.tsx:124
+#: packages/ui/primitives/document-flow/add-subject.tsx:275
 msgid "Update"
 msgstr "Update"
 
