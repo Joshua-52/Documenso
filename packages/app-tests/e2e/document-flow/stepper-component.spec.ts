@@ -16,7 +16,7 @@ import {
   seedPendingDocumentWithFullFields,
 } from '@documenso/prisma/seed/documents';
 import { seedUser } from '@documenso/prisma/seed/users';
-
+ 
 import { apiSignin } from '../fixtures/authentication';
 
 // Can't use the function in server-only/document due to it indirectly using

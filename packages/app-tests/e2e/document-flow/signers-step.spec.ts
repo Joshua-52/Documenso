@@ -13,7 +13,7 @@ test.describe('[EE_ONLY]', () => {
 
   test.beforeEach(() => {
     test.skip(
-      process.env.NEXT_PUBLIC_FEATURE_BILLING_ENABLED !== 'true' || !enterprisePriceId,
+      process.env.NEXT_PUBLIC_FEATURE_BILLING_ENABLED !== 'false' || !enterprisePriceId,
       'Billing required for this test',
     );
   });
